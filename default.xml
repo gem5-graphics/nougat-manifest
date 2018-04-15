@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp" fetch=".." />
+  <remote  name="aosp" fetch="https://android.googlesource.com" />
   <remote  name="gem5-graphics" fetch="https://github.com/gem5-graphics" />
 
   <default revision="refs/tags/android-7.1.1_r58"
