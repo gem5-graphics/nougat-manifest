@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
+  <remote  name="aosp" fetch=".." />
+  <remote  name="gem5-graphics" fetch="https://github.com/gem5-graphics" />
+
   <default revision="refs/tags/android-7.1.1_r58"
            remote="aosp"
            sync-j="4" />
@@ -33,7 +34,7 @@
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+  <project path="device/generic/goldfish-opengl" name="goldfish-opengl" remote="gem5-graphics" groups="pdk"/>
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mips64" name="device/generic/mips64" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
